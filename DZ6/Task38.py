@@ -32,6 +32,10 @@ def readUser (userList):
         if user[0] == last_name:
             print('Для введенной Фамилии, найден номер телефона:' + '\n')
             print(user[0], user[1], user[2], user[3])
+            break
+        else:
+            print('Указанная Фамилия в списке телефонов отсутствует.' + '\n')
+            break  
 
 # функция удаления записи
 def deleteUser (fileName):
